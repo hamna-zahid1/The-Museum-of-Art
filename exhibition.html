@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions - The Museum of Art</title>
+    <link rel="icon" type="image/x-icon" href="./photos/logo.jpg">
+    <link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Vintage-inspired header -->
+    <header class="vintage-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./photos/logo.jpg" alt="Museum Logo" class="d-inline-block align-top footer-logo">
+                    <span class="museum-title fw-bold">The Museum Of Art</span>
+                </a>
+                <button class="navbar-toggler vintage-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./exhibition.html">EXHIBITION</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./space.html">SPACE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+            <section class="about-hero">
+        <div class="hero-image-container">
+            <img src="./photos/Exhibition/cover-1-1536x954.jpg" alt="Museum Interior" class="hero-image">
+            <div class="hero-overlay2">
+                <div class="hero-content mt-5">
+                    <h1 class="hero-title text-center mt-5">Current & Past Exhibitions</h1>
+                    <p class="hero-subtitle text-center">Explore our curated collections of extraordinary art from around the world</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibition Filter -->
+    <section class="exhibition-filter">
+        <div class="container">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Exhibitions</button>
+                <button class="filter-btn" data-filter="current">Current</button>
+                <button class="filter-btn" data-filter="past">Past</button>
+                <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibitions Grid -->
+    <main class="exhibition-grid">
+        <div class="container">
+            <div class="row">
+                <!-- Exhibition 1 -->
+                <div class="col-lg-6 mb-5 exhibition-item current">
+                    <div class="exhibition-card">
+                        <div class="exhibition-img-container">
+                            <img src="./photos/Exhibition/cover-1-1536x954.jpg" alt="The Emerging Talent Exhibition" class="img-fluid">
+                            <div class="date-badge">Current</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h2 class="exhibition-title">The Emerging Talent Exhibition (ET-19)</h2>
+                            <div class="exhibition-meta">
+                                <span class="exhibition-date">13<sup>th</sup> JANUARY 2024 - 14<sup>th</sup> FEBRUARY 2024</span>
+                                <span class="exhibition-category">Contemporary Art</span>
+                            </div>
+                            <p class="exhibition-description">Showcasing the most promising new artists of our generation, this exhibition highlights innovative approaches to traditional mediums.</p>
+                            <a href="#" class="vintage-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibition 2 -->
+                <div class="col-lg-6 mb-5 exhibition-item past">
+                    <div class="exhibition-card">
+                        <div class="exhibition-img-container">
+                            <img src="./photos/Exhibition/18th exhibition.jpg" alt="The 18th Emerging Talent Exhibition" class="img-fluid">
+                            <div class="date-badge">Past</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h2 class="exhibition-title">The 18<sup>th</sup> Emerging Talent Exhibition (ET-18)</h2>
+                            <div class="exhibition-meta">
+                                <span class="exhibition-date">15<sup>th</sup> JANUARY 2023 - 16<sup>th</sup> FEBRUARY 2023</span>
+                                <span class="exhibition-category">Mixed Media</span>
+                            </div>
+                            <p class="exhibition-description">Last year's showcase of emerging artists that launched several now-established careers in the contemporary art world.</p>
+                            <a href="#" class="vintage-btn">View Archive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibition 3 -->
+                <div class="col-lg-6 mb-5 exhibition-item past">
+                    <div class="exhibition-card">
+                        <div class="exhibition-img-container">
+                            <img src="./photos/Exhibition/Belonging.jpg" alt="Belonging Exhibition" class="img-fluid">
+                            <div class="date-badge">Past</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h2 class="exhibition-title">Belonging</h2>
+                            <div class="exhibition-meta">
+                                <span class="exhibition-date">15<sup>th</sup> DECEMBER 2023 - 30<sup>th</sup> DECEMBER 2023</span>
+                                <span class="exhibition-category">Conceptual Art</span>
+                            </div>
+                            <p class="exhibition-description">An exploration of identity and place through the works of international artists examining themes of home and displacement.</p>
+                            <a href="#" class="vintage-btn">View Archive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibition 4 -->
+                <div class="col-lg-6 mb-5 exhibition-item past">
+                    <div class="exhibition-card">
+                        <div class="exhibition-img-container">
+                            <img src="./photos/Exhibition/Let there be night.jpg" alt="Let There Be Night Exhibition" class="img-fluid">
+                            <div class="date-badge">Past</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h2 class="exhibition-title">Let There Be Night</h2>
+                            <div class="exhibition-meta">
+                                <span class="exhibition-date">15<sup>th</sup> DECEMBER 2023 - 31<sup>st</sup> DECEMBER 2023</span>
+                                <span class="exhibition-category">Photography</span>
+                            </div>
+                            <p class="exhibition-description">A photographic journey through nocturnal landscapes and the hidden beauty that emerges after dark.</p>
+                            <a href="#" class="vintage-btn">View Archive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibition 5 -->
+                <div class="col-lg-6 mb-5 exhibition-item past">
+                    <div class="exhibition-card">
+                        <div class="exhibition-img-container">
+                            <img src="./photos/Exhibition/Scenic route.jpg" alt="Scenic Route Exhibition" class="img-fluid">
+                            <div class="date-badge">Past</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h2 class="exhibition-title">Scenic Route</h2>
+                            <div class="exhibition-meta">
+                                <span class="exhibition-date">19<sup>th</sup> MAY 2022 - 06<sup>th</sup> JUNE 2023</span>
+                                <span class="exhibition-category">Landscape Art</span>
+                            </div>
+                            <p class="exhibition-description">Celebrating the beauty of travel and the artistic interpretation of landscapes from around the globe.</p>
+                            <a href="#" class="vintage-btn">View Archive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibition 6 -->
+                <div class="col-lg-6 mb-5 exhibition-item current">
+                    <div class="exhibition-card">
+                        <div class="exhibition-img-container">
+                            <img src="./photos/Exhibition/Telling structures.jpeg" alt="Telling Structures Exhibition" class="img-fluid">
+                            <div class="date-badge">Current</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h2 class="exhibition-title">Telling Structures</h2>
+                            <div class="exhibition-meta">
+                                <span class="exhibition-date">13<sup>th</sup> JANUARY 2024 - 14<sup>th</sup> FEBRUARY 2024</span>
+                                <span class="exhibition-category">Architectural Art</span>
+                            </div>
+                            <p class="exhibition-description">Examining how built environments tell stories about our cultures, histories, and collective identities.</p>
+                            <a href="#" class="vintage-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibition 7 -->
+                <div class="col-lg-6 mb-5 exhibition-item past">
+                    <div class="exhibition-card">
+                        <div class="exhibition-img-container">
+                            <img src="./photos/Exhibition/The world we create.jpg" alt="The World We Create Exhibition" class="img-fluid">
+                            <div class="date-badge">Past</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h2 class="exhibition-title">The World We Create</h2>
+                            <div class="exhibition-meta">
+                                <span class="exhibition-date">13<sup>th</sup> JANUARY 2024 - 14<sup>th</sup> FEBRUARY 2024</span>
+                                <span class="exhibition-category">Futurism</span>
+                            </div>
+                            <p class="exhibition-description">Artists envision possible futures through speculative design and imaginative storytelling.</p>
+                            <a href="#" class="vintage-btn">View Archive</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibition 8 -->
+                <div class="col-lg-6 mb-5 exhibition-item upcoming">
+                    <div class="exhibition-card">
+                        <div class="exhibition-img-container">
+                            <img src="./photos/Exhibition/Forms of Existence.jpg" alt="Forms of Existence Exhibition" class="img-fluid">
+                            <div class="date-badge">Coming Soon</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h2 class="exhibition-title">Forms of Existence</h2>
+                            <div class="exhibition-meta">
+                                <span class="exhibition-date">15<sup>th</sup> MARCH 2024 - 30<sup>th</sup> APRIL 2024</span>
+                                <span class="exhibition-category">Abstract Art</span>
+                            </div>
+                            <p class="exhibition-description">An exploration of abstract forms and their relationship to human perception and consciousness.</p>
+                            <a href="#" class="vintage-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibition 9 -->
+                <div class="col-lg-6 mb-5 exhibition-item upcoming">
+                    <div class="exhibition-card">
+                        <div class="exhibition-img-container">
+                            <img src="./photos/Exhibition/Exploring boundries.jpg" alt="Exploring Boundaries Exhibition" class="img-fluid">
+                            <div class="date-badge">Coming Soon</div>
+                        </div>
+                        <div class="exhibition-content">
+                            <h2 class="exhibition-title">Exploring Boundaries</h2>
+                            <div class="exhibition-meta">
+                                <span class="exhibition-date">1<sup>st</sup> MAY 2024 - 30<sup>th</sup> JUNE 2024</span>
+                                <span class="exhibition-category">Experimental Art</span>
+                            </div>
+                            <p class="exhibition-description">Pushing the limits of artistic expression through innovative techniques and boundary-crossing concepts.</p>
+                            <a href="#" class="vintage-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h3 class="newsletter-title">Stay Updated</h3>
+                    <p class="newsletter-text">Subscribe to our newsletter for exhibition announcements, special events, and more.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="vintage-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vintage-modern footer -->
+    <footer class="vintage-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="./photos/logo.jpg" alt="Museum Logo" class="footer-logo">
+                        <h3 class="footer-title fw-bold">The Museum Of Art</h3>
+                    </div>
+                    <address class="footer-address">
+                        <p>The Museum Fifth Avenue</p>
+                        <p>1000 Fifth Avenue<br>
+                        New York, NY 10028<br>
+                        Phone: 212-535-7710</p>
+                    </address>
+                </div>
+                
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <h4 class="footer-heading">About</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Mission and History</a></li>
+                        <li><a href="#">Collection Areas</a></li>
+                        <li><a href="#">Conservation</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Host an Event</a></li>
+                        <li><a href="#">Travel with Us</a></li>
+                        <li><a href="#">Corporate Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <h4 class="footer-heading">Opportunities</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Volunteers</a></li>
+                        <li><a href="#">Fellowships</a></li>
+                        <li><a href="#">Internships</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 mb-4">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="#">Site Index</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="copyright">
+                    © 2000–2024 The Museum of Art. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple filter functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter exhibitions
+                const filter = button.dataset.filter;
+                document.querySelectorAll('.exhibition-item').forEach(item => {
+                    if (filter === 'all') {
+                        item.style.display = 'block';
+                    } else {
+                        if (item.classList.contains(filter)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

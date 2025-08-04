@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Space - The Museum of Art</title>
+    <link rel="icon" type="image/x-icon" href="./photos/logo.jpg">
+    <link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+.hero-image-container {
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image {
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(20%) brightness(90%);
+}
+
+#heroCarousel {
+    height: 100%;
+}
+
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item,
+#heroCarousel img {
+    height: 100%;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4); /* optional dark overlay */
+    z-index: 2;
+}
+
+.hero-content {
+    z-index: 3;
+    max-width: 800px;
+    padding: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Vintage-inspired header -->
+    <header class="vintage-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./photos/logo.jpg" alt="Museum Logo" class="d-inline-block align-top footer-logo">
+                    <span class="museum-title fw-bold">The Museum Of Art</span>
+                </a>
+                <button class="navbar-toggler vintage-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./exhibition.html">EXHIBITION</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./space.html">SPACE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Space Hero Section -->
+    <section class="about-hero">
+    <div class="hero-image-container position-relative">
+        
+        <!-- Bootstrap Carousel as background -->
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./photos/space/4.jpg" class="d-block w-100 hero-image" alt="Gallery Space">
+                </div>
+                <div class="carousel-item">
+                    <img src="./photos/space/8.jpg" class="d-block w-100 hero-image" alt="Gallery Space">
+                </div>
+                <div class="carousel-item">
+                    <img src="./photos/space/6.jpg" class="d-block w-100 hero-image" alt="Gallery Space">
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay Content -->
+        <div class="hero-overlay d-flex align-items-center justify-content-center">
+            <div class="hero-content text-center text-white mt-5">
+                <h1 class="hero-title text-center mt-5">Our Space</h1>
+                <p class="hero-subtitle text-center">Discover our versatile galleries designed to showcase both traditional and contemporary art in the best possible light.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Gallery Info Section -->
+    <section class="gallery-info">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery Spaces</h2>
+                <div class="divider-line"></div>
+                <p class="section-description">The Museum of Art's display area is versatile and divided into three spaces: Gallery A, B and C. The spaces are on split levels catering to varied exhibition areas simultaneously.</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-card">
+                        <h3 class="gallery-name">Gallery A</h3>
+                        <p class="gallery-desc">Our largest space with movable walls for customizable configurations, perfect for major exhibitions.</p>
+                        <div class="gallery-specs">
+                            <p><i class="fas fa-ruler-combined"></i> 2,500 sq ft</p>
+                            <p><i class="fas fa-lightbulb"></i> Adjustable track lighting</p>
+                            <p><i class="fas fa-volume-up"></i> Integrated audio system</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-card">
+                        <h3 class="gallery-name">Gallery B</h3>
+                        <p class="gallery-desc">Intimate space with natural light control, ideal for smaller collections and delicate works.</p>
+                        <div class="gallery-specs">
+                            <p><i class="fas fa-ruler-combined"></i> 1,800 sq ft</p>
+                            <p><i class="fas fa-lightbulb"></i> LED and halogen options</p>
+                            <p><i class="fas fa-temperature-low"></i> Climate controlled</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-card">
+                        <h3 class="gallery-name">Gallery C</h3>
+                        <p class="gallery-desc">Flexible multi-purpose space that can transform for exhibitions, lectures, or special events.</p>
+                        <div class="gallery-specs">
+                            <p><i class="fas fa-ruler-combined"></i> 2,000 sq ft</p>
+                            <p><i class="fas fa-lightbulb"></i> Dual lighting systems</p>
+                            <p><i class="fas fa-chair"></i> Configurable seating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Specifications</h2>
+                <div class="divider-line"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="specs-content">
+                        <p>Air conditioning and adjustable track lighting is available in all three Galleries. The wall sizes in each gallery are variable, allowing for versatile displays. Each gallery is also fitted with surveillance cameras, multiple electricity outlets, and an audio system.</p>
+                        <p>A selection of pedestals and freestanding walls of variable dimensions is also available for use. All usable walls are fitted with a hooking system for hanging artworks.</p>
+                        <p>The gallery is equipped with two bathroom units, two movable benches, and a seating area near the reception desk.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="specs-image">
+                        <img src="./photos/space/3.jpg" alt="Gallery Specifications" class="img-fluid vintage-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services Offered</h2>
+                <div class="divider-line"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-wifi service-icon"></i>
+                        <h3 class="service-title">Communication</h3>
+                        <ul class="service-list">
+                            <li>WiFi throughout the space</li>
+                            <li>In-house public address system</li>
+                            <li>Background music capability</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-print service-icon"></i>
+                        <h3 class="service-title">Printing Services</h3>
+                        <ul class="service-list">
+                            <li>Exhibition invitation cards</li>
+                            <li>Banners and signage</li>
+                            <li>Promotional materials</li>
+                            <li>Framing at cost</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-utensils service-icon"></i>
+                        <h3 class="service-title">Amenities</h3>
+                        <ul class="service-list">
+                            <li>Backup generator system</li>
+                            <li>Refreshments via onsite cafeteria</li>
+                            <li>Display equipment available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Showcase -->
+    <section class="gallery-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery Showcase</h2>
+                <div class="divider-line"></div>
+                <p class="section-description">Explore our spaces through these images from past exhibitions and events.</p>
+            </div>
+            
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./photos/space/6.jpg" class="d-block w-100" alt="Gallery Space">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./photos/space/10.jpg" class="d-block w-100" alt="Gallery Space">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./photos/space/4.jpg" class="d-block w-100" alt="Gallery Space">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./photos/space/8.jpg" class="d-block w-100" alt="Gallery Space">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./photos/space/7.jpeg" class="d-block w-100" alt="Gallery Space">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vintage-modern footer -->
+    <footer class="vintage-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="./photos/logo.jpg" alt="Museum Logo" class="footer-logo">
+                        <h3 class="footer-title fw-bold">The Museum Of Art</h3>
+                    </div>
+                    <address class="footer-address">
+                        <p>The Museum Fifth Avenue</p>
+                        <p>1000 Fifth Avenue<br>
+                        New York, NY 10028<br>
+                        Phone: 212-535-7710</p>
+                    </address>
+                </div>
+                
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <h4 class="footer-heading">About</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Mission and History</a></li>
+                        <li><a href="#">Collection Areas</a></li>
+                        <li><a href="#">Conservation</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Host an Event</a></li>
+                        <li><a href="#">Travel with Us</a></li>
+                        <li><a href="#">Corporate Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <h4 class="footer-heading">Opportunities</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Volunteers</a></li>
+                        <li><a href="#">Fellowships</a></li>
+                        <li><a href="#">Internships</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 mb-4">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="#">Site Index</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="copyright">
+                    © 2000–2024 The Museum of Art. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
